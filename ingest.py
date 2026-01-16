@@ -35,3 +35,4 @@ vectorstore = PineconeVectorStore.from_documents(
     index_name=index_name
 )
 print("Ingestion complete!")
+
