@@ -1,12 +1,22 @@
 [
   {
-    "table": "fct_patient_identity",
-    "description": "Primary table for verified patient identity signals from Bamboo Health sources.",
-    "columns": ["patient_id", "verification_status", "updated_at"]
+    "id": "model.bamboo_health.fct_patient_identity",
+    "content": "Table: fct_patient_identity. Description: Primary fact table for patient identity signals. Used for identifying unique patients across global infrastructure.",
+    "metadata": {
+      "database": "analytics",
+      "schema": "identity",
+      "columns": ["patient_id", "verification_status", "updated_at"],
+      "owner": "identity_team"
+    }
   },
   {
-    "table": "dim_commerce_spend",
-    "description": "Predictive spend data used for forecasting commerce revenue and user retention at scale.",
-    "columns": ["user_id", "predicted_spend", "actual_spend"]
+    "id": "model.bamboo_health.dim_commerce_spend",
+    "content": "Table: dim_commerce_spend. Description: Predictive model output for user commerce spend. Used for revenue forecasting and ROI analysis.",
+    "metadata": {
+      "database": "analytics",
+      "schema": "commerce",
+      "columns": ["user_id", "predicted_spend", "last_purchase_date"],
+      "owner": "finance_team"
+    }
   }
 ]
