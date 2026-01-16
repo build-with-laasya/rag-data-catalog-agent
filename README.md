@@ -5,4 +5,6 @@ The Problem: Data discovery is slow and stakeholders had to wait more than 24 ho
 
 The Solution: An AI-agent that "reads" dbt documentation to provide instant answers.
 
+Technical Architecture": This project uses OpenAI’s text-embedding-3-small model for semantic indexing and Pinecone as a vector store for low-latency retrieval.
+
 Engineering Highlights: Modular Python, Vector Embeddings, Semantic Search.
