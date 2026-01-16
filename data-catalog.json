@@ -1,0 +1,12 @@
+[
+  {
+    "table": "fct_patient_identity",
+    "description": "Primary table for verified patient identity signals from Bamboo Health sources.",
+    "columns": ["patient_id", "verification_status", "updated_at"]
+  },
+  {
+    "table": "dim_commerce_spend",
+    "description": "Predictive spend data used for forecasting commerce revenue and user retention at scale.",
+    "columns": ["user_id", "predicted_spend", "actual_spend"]
+  }
+]
